@@ -1,4 +1,3 @@
-import React from "react";
 import PostPageStyles from "./PostPage.module.css";
 import userImage from "../../../public/img/IgorDzambazov.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";

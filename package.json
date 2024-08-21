@@ -1,11 +1,15 @@
 {
-  "name": "http:://GyorgiKirkov.github.io/kinomoe",
+  "homepage": "http:://gyorgikirkov.github.io/KinoMoe",
+  "name": "KinoMoe",
   "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite",
+    "start": "react-scripts start",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist",
     "build": "tsc && vite build",
+    "dev": "vite",
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview"
   },

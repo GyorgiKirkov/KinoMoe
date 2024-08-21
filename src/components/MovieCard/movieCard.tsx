@@ -1,5 +1,4 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import cardStyle from "./movieCard.module.css";
 
 export  interface Movies {
