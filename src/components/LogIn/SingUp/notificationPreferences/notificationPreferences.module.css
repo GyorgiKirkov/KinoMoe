@@ -1,0 +1,87 @@
+.loginBg {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../../../../../public/img/BGlogin.jpg) center/cover no-repeat;
+  min-width: 100%;
+  min-height: 100vh;
+}
+
+.textH2 {
+  font-size: 25px;
+}
+
+.selection {
+  background-color: #1b1f23;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: max-content;
+  padding: 30px;
+  border-radius: 18px;
+  box-shadow: 0 8px 16px rgba(255, 255, 255, 0.2);
+  animation: glow 2s infinite alternate;
+}
+
+@keyframes glow {
+  from {
+    box-shadow: 0 0px 12px rgba(255, 255, 255, 0.3);
+  }
+  to {
+    box-shadow: 0 6px 16px rgba(255, 255, 255, 0.8);
+  }
+}
+
+.customCheck:checked {
+  background-color: #519c3c;
+  backface-visibility: hidden;
+  transform: rotateY(360deg);
+}
+
+button:hover {
+  background-color: #4fd529 !important;
+}
+
+.squaredOne,
+.squaredTwo,
+.squaredThree {
+  width: 28px;
+  height: 28px;
+  position: relative;
+  background: #fcfff4;
+  margin: 10px;
+}
+
+.squaredOne label:after,
+.squaredTwo label:after,
+.squaredThree label:after {
+  content: '';
+  width: 32px;
+  height: 18px;
+  position: absolute;
+  top: -5px;
+  left: 2px;
+  border: 4px solid rgb(49, 171, 49);
+  border-top: none;
+  border-right: none;
+  background: transparent;
+  opacity: 0;
+  transform: rotate(-45deg);
+  cursor: pointer;
+}
+
+.squaredTwo label:hover::after,
+.squaredThree label:hover::after,
+.squaredOne label:hover::after {
+  opacity: 0.3;
+}
+
+.squaredOne input[type="checkbox"],
+.squaredTwo input[type="checkbox"],
+.squaredThree input[type="checkbox"] {
+  visibility: hidden;
+}
+
+.squaredOne input[type="checkbox"]:checked + label:after,
+.squaredTwo input[type="checkbox"]:checked + label:after,
+.squaredThree input[type="checkbox"]:checked + label:after {
+  opacity: 1;
+}

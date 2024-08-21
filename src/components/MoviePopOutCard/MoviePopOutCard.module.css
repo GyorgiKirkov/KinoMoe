@@ -1,0 +1,120 @@
+/* MoviePopOutCard.module.css */
+.popOutOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.popOutContent {
+  position: relative;
+  width: 80%;
+  max-width: 800px;
+  height: 80vh;
+  background: url("../../../public/img/your-image.jpg") no-repeat center
+    center/cover; /* Use your movie image URL here */
+  border-radius: 10px;
+  color: white;
+  overflow: hidden;
+}
+
+.closeButton {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: none;
+  border: none;
+  font-size: 24px;
+  color: white;
+  cursor: pointer;
+}
+
+.content {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 1),
+    rgba(0, 0, 0, 0.976),
+    rgba(0, 0, 0, 0.5),
+    rgba(0, 0, 0, 0)
+  );
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.h2Banner {
+  font-size: 40px;
+  font-weight: 700;
+  color: white;
+  margin: 0;
+}
+
+.pBanner {
+  color: white;
+  margin: 10px 0;
+}
+
+.buttons {
+  display: flex;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.button {
+  background: transparent !important;
+  border: none;
+  color: white;
+  cursor: pointer;
+  font-size: 16px;
+  transition: transform 0.3s ease, z-index 0.3s ease; /* Add transition for smooth effect */
+}
+
+.button.play {
+  display: flex;
+  align-items: center;
+  gap: 13px;
+  border-radius: 5px;
+  background-color: #519c3c!important;
+}
+ 
+.button.play:hover {
+ 
+  background-color: #51cf2e!important;
+}
+.button .icon {
+  font-size: 20px;
+}
+.liked {
+    color: red;
+  }
+
+  .shareButtons {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+  }
+
+  .watchLater {
+    color: green;
+
+  }
+.customShareButton {
+    background-color: transparent !important;
+  }
+
+  .customShareButton:hover{
+    background-color: transparent !important;
+    transform: scale(1.2); 
+  }
+  .customShareButton {
+    background-color: transparent !important;
+    transition: transform 0.3s ease, z-index 0.3s ease; /* Add transition for smooth effect */
+  }

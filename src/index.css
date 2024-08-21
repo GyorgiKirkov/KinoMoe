@@ -1,0 +1,15 @@
+.card-img,
+.card-img-top {
+  border-top-left-radius: 20px !important;
+  border-top-right-radius: 20px !important;
+}
+
+.card-header:first-child {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 15px;
+}
+
+.card-header {
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}

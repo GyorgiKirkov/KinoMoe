@@ -1,0 +1,90 @@
+.loginBg {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../../../../../public/img/BGlogin.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover; 
+  min-width: 100%;
+  min-height: 100vh;
+}
+
+.selection {
+  background-color: #1b1f23;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: max-content;
+  padding: 30px;
+  border-radius: 18px;
+  box-shadow: 0 8px 16px rgba(255, 255, 255, 0.2);
+  animation: glow 2s infinite alternate;
+}
+
+@keyframes glow {
+  from {
+    box-shadow: 0 0px 12px rgba(255, 255, 255, 0.3);
+  }
+  to {
+    box-shadow: 0 6px 16px rgba(255, 255, 255, 0.8);
+  }
+}
+
+h2 {
+  font-family: sans-serif;
+  font-size: 15px;
+  text-align: center;
+  color: rgb(255, 255, 255);
+}
+
+.customCheck {
+  display: none;
+}
+
+.customCheck + .customCheckLabel {
+  background-color: #cccccc00;
+  color: #fff;
+  padding: 5px 10px;
+  font-family: sans-serif;
+  cursor: pointer;
+  -webkit-user-select: none;
+  user-select: none;
+  border-radius: 25px;
+  display: inline-block;
+  margin: 0 10px 10px 10px;
+  backface-visibility: hidden;
+  transition: all 0.6s ease;
+  border: 1px solid white;
+  width: 120px;
+  height: auto;
+}
+
+.customCheck:checked + .customCheckLabel {
+  background-color: #519c3c;
+  backface-visibility: hidden;
+  transform: rotateY(360deg);
+}
+
+button {
+  margin: 0;
+  font-weight: 600 !important;
+}
+
+button:hover {
+  background-color: #4fd529 !important;
+}
+
+.base64 {
+  background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIj8+PHN2ZyBmaWxsPSIjRkZGRkZGIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciICB2aWV3Qm94PSIwIDAgMzAgMzAiIHdpZHRoPSIzMHB4IiBoZWlnaHQ9IjMwcHgiPiAgICA8cGF0aCBkPSJNMjUuNTY1LDkuNzg1Yy0wLjEyMywwLjA3Ny0zLjA1MSwxLjcwMi0zLjA1MSw1LjMwNWMwLjEzOCw0LjEwOSwzLjY5NSw1LjU1LDMuNzU2LDUuNTUgYy0wLjA2MSwwLjA3Ny0wLjUzNywxLjk2My0xLjk0NywzLjk0QzIzLjIwNCwyNi4yODMsMjEuOTYyLDI4LDIwLjA3NiwyOGMtMS43OTQsMC0yLjQzOC0xLjEzNS00LjUwOC0xLjEzNSBjLTIuMjIzLDAtMi44NTIsMS4xMzUtNC41NTQsMS4xMzVjLTEuODg2LDAtMy4yMi0xLjgwOS00LjQtMy40OTZjLTEuNTMzLTIuMjA4LTIuODM2LTUuNjczLTIuODgyLTljLTAuMDMxLTEuNzYzLDAuMzA3LTMuNDk2LDEuMTY1LTQuOTY4YzEuMjExLTIuMDU1LDMuMzczLTMuNDUsNS43MzQtMy40OTZjMS44MDktMC4wNjEsMy40MTksMS4yNDIsNC41MjMsMS4yNDIgYzEuMDU4LDAsMy4wMzYtMS4yNDIsNS4yNzQtMS4yNDJDMjEuMzk0LDcuMDQxLDIzLjk3LDcuMzMyLDI1LjU2NSw5Ljc4NXogTTE1LjAwMSw2LjY4OGMtMC4zMjItMS42MSwwLjU2Ny0zLjIyLDEuMzk1LTQuMjQ3IGMxLjA1OC0xLjI0MiwyLjcyOS0yLjA4NSw0LjE3LTIuMDg1YzAuMDkyLDEuNjEtMC40OTEsMy4xODktMS41MzMsNC4zMzljLTEuMzU0LDEuNzY0LTMuMDA2LDIuNy00LjQ5OCwyLjUxNkMxNi40ODgsNi44NzIsMTUuMDAxLDYuNjg4eiIvPjwvc3ZnPg==);
+  background-repeat: no-repeat;
+  background-position-y: center;
+  background-position-x: 20px;
+}
+
+.h2Rec {
+  font-size: 28px !important;
+}
+
+.profileImage {
+  width: 300px;
+  height: 300px;
+}

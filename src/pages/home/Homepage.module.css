@@ -1,0 +1,191 @@
+.HomeBG {
+  background-image: linear-gradient(
+      0deg,
+      rgba(11, 21, 27, 1) 0%,
+      rgba(11, 21, 27, 1) 16%,
+      rgba(11, 21, 27, 1) 30%,
+      rgba(11, 21, 27, 1) 41%,
+      rgba(11, 21, 27, 0.8714657738095238) 64%,
+      rgba(11, 21, 27, 0.7650231967787114) 79%,
+      rgba(11, 21, 27, 0.6305694152661064) 90%,
+      rgba(11, 21, 27, 0.6753873424369747) 100%
+    ),
+    url(../../public/img/movie-posters.jpg); 
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 130vh;
+}
+.logoImg {
+  max-width: 716px;
+  height: 256px;
+  position: relative;
+  left: 50%;
+  transform: translate(-50%);
+}
+button:hover {
+  background-color: #4fd529 !important;
+}
+
+button {
+  margin: 10px 0 !important;
+  /* background-color: #519c3c !important; */
+  font-weight: 600 !important;
+  font-size: 18px !important;
+}
+button:hover {
+  background-color: #4fd529 !important;
+}
+
+.bannerText {
+  font-size: 35px;
+  color: white;
+  width: 1253px;
+  height: 225px;
+}
+
+.imgMovie {
+  margin-top: 150px;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: -103px 0px 82px -56px rgba(255, 255, 255, 0.212),
+    103px 0px 82px -56px rgba(255, 255, 255, 0.227),
+    -11px -90px 72px -46px rgba(255, 255, 255, 0.109),
+    -4px 50px 72px -46px rgba(255, 255, 255, 0.223);
+  background-blend-mode: screen;
+}
+
+.bgHomePage {
+  background-color: #0b151b;
+  overflow: hidden;
+}
+
+.optionalChoice {
+  background-color: red;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  position: absolute;
+  width: 100%;
+  top: -35px;
+  height: 50px;
+  opacity: 2;
+  overflow: hidden;
+  z-index: 1;
+}
+
+ul li {
+  list-style-type: none;
+  text-align: left !important;
+}
+.card_title {
+  color: #519c3c;
+  font-family: Lato;
+  font-size: 32px;
+  font-weight: 700;
+  text-align: center;
+}
+.card_header {
+  background: linear-gradient(89.13deg, #000000 3.46%, #519c3c 98.84%);
+  border-radius: 12px;
+  z-index: 2;
+  font-family: Lato;
+  font-family: Lato;
+  font-size: 32px;
+  font-weight: 700;
+  text-align: center;
+}
+h4 {
+  font-family: Lato;
+  font-size: 64px;
+  font-weight: 800;
+  line-height: 76.8px;
+}
+.artistImg {
+  border-radius: 40px;
+  box-shadow: 15px 15px 50px 0px #00000080;
+}
+
+.text {
+
+  font-family: Lato;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 40px;
+}
+
+.textCategory {
+  font-family: Lato;
+  font-size: 25px;
+  line-height: 40px;
+  text-align: center;
+  margin: 0;
+}
+.artistCard:hover {
+  opacity: 0.9;
+  transform: scale(1.05);
+}
+
+.btnLending:hover {
+  color: rgb(227, 16, 16);
+}
+
+.kinoFooter img {
+  width: 180px !important;
+}
+
+.card {
+  position: relative;
+  background: linear-gradient(180deg, #000000 0%, rgba(0, 0, 0, 0) 100%);
+  border-radius: 20px;
+  margin-top: 50px;
+  height: 550px;
+}
+
+.btnLending {
+  position: absolute;
+  left: 0;
+ bottom: 0px;
+}
+
+
+@media (max-width: 769px) {
+  .logoLogIn {
+    flex-direction: column;
+    align-items: center;
+  }
+.logoImg{
+  width: 450px;
+}
+  .rooms {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .movieRoom,
+  .kidsRoom,
+  .docRoom {
+    width: 100%;
+    max-width: 30px;
+    margin-bottom: 20px;
+  }
+
+  .payoption .col-4 {
+    width: 100%;
+    max-width: 300px;
+    margin-bottom: 20px;
+  }
+
+  .bannerText {
+    font-size: 24px;
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .artistCard {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .artistCard img {
+    width: 60%;
+  }
+}
